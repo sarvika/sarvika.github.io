@@ -18512,8 +18512,6 @@ html:not([dir='rtl']) .noUi-horizontal .noUi-handle
 .footer.skewed {
     position: relative;
     overflow: hidden;
-    margin-top: -420px;
-    padding-top: 500px;
-    pointer-events: none;
+    padding-top: 100px;
     background: transparent;
 }
