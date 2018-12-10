@@ -1,0 +1,106 @@
+
+
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="description" content="The Sarvika Way">
+      <meta name="author" content="Sarvika Opensource Project">
+      <title>The Sarvika Way</title>
+      <link rel="stylesheet" href="../assets/css/style.min.css">
+      <link rel="stylesheet" href="../assets/css/typography.css">
+      <link href="../assets/img/brand/favicon.ico" rel="icon" type="image/png">
+      <!-- Fonts -->
+      <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+      <!-- Icons -->
+      <link href="../assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
+      <link href="../assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="//highlightjs.org/static/demo/styles/atom-one-light.css">
+   </head>
+   <body onhashchange="onHashChange()">
+      <header class="navbar navbar-expand bg-gradient-info flex-row align-items-md-center ct-navbar">
+            <div class="col-12 col-md-3 col-xl-2">
+         <a class="navbar-brand mr-0 mr-md-2" href="/" aria-label="Bootstrap">
+            <img src="../assets/img/brand/sarvika.png">
+         </a>
+            </div>
+
+            <div class="col-12 col-md-9 col-xl-10">
+         <ul class="navbar-nav flex-row d-none d-md-flex">
+            <li class="nav-item">
+               <a class="nav-link" style="font-size: 24px;" href="JavaScript:b4ghome();">The Sarvika Way</a>
+            </li>
+            <li class="nav-item">         
+               <a href="https://jgodara.github.io/blog4git" target="_blank" class="btn btn-neutral btn-icon ml-sm-3" style="margin-top: 10px;">
+                  <small>powered by</small>
+                  <span class="nav-link-inner--text">Blog4Git</span>
+               </a>
+            </li>
+         </ul>
+
+         </div>
+      </header>
+      <!--Header-->
+
+      <div class="container-fluid">
+         <div class="row flex-xl-nowrap">
+            <div class="col-12 col-md-3 col-xl-2 ct-sidebar">
+               <nav class="collapse ct-links">
+                  <div class="ct-toc-item active">
+                     <a class="ct-toc-link" href="JavaScript:b4ghome();">Featured Documents</a>
+                     <ul class="section-nav" id="b4g-blogs-featured">
+
+                     </ul>
+                  </div>
+               </nav>
+             </div>
+            <main class="col-12 col-md-9 col-xl-10 py-md-3 pl-md-5 ct-content">
+               <div class="col-md-12" id="b4g-section-main">
+               </div>
+            </main>
+         </div>
+      </div>
+      <!-- templates -->
+      <script type="x-templ-mustache" id="section-blog-listing">
+         <h1 class="ct-page-title">All Documents</h1>
+         <hr>
+         <div class="content" id="b4g-blogs-all"></div>
+      </script>
+      <script type="x-templ-mustache" id="blog-listing-mustache">
+         {{#all}}
+           <h3 class="title">
+             <a href="#{{id}}">{{title}}</a>
+           </h3>
+           <p data-type="b4g-data-shortdesc" data-id="{{id}}"></p>
+           <hr />
+         {{/all}}
+      </script>
+      <script type="x-templ-mustache" id="featured-blog-mustache">
+         {{#featured}}
+         <li class="toc-entry toc-h3"><a href="#{{id}}">{{title}}</a></li>
+         {{/featured}}
+      </script>
+      <script type="text/javascript">
+         var blogTitle = 'The Sarvika Way';
+      </script>
+      <!-- Javascript -->
+
+      <!-- Core -->
+      <script src="../assets/vendor/jquery/jquery.min.js"></script>
+      <script src="../assets/vendor/popper/popper.min.js"></script>
+      <script src="../assets/vendor/bootstrap/bootstrap.min.js"></script>
+      <script src="../assets/vendor/headroom/headroom.min.js"></script>
+      <!-- Optional JS -->
+      <script src="../assets/vendor/onscreen/onscreen.min.js"></script>
+      <script src="../assets/vendor/nouislider/js/nouislider.min.js"></script>
+      <script src="../assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+      <!-- Argon JS -->
+      <script src="../assets/js/argon.js?v=1.0.0"></script>
+
+      <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+      <script type="text/javascript" src="//cdn.rawgit.com/showdownjs/showdown/master/dist/showdown.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+      <script type="text/javascript" src="./assets/js/app.js"></script>
+   </body>
+</html>
