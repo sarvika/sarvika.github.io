@@ -719,7 +719,7 @@ Non-required Javadoc is not strictly required to follow the formatting rules of 
 
 ---
 
-The rules described in the above text could be downloaded [in this XML](https://github.com/sarvika/the-sarvika-way/blob/master/formatters.xml) file that can be imported in all mainstream IDEs (`IntelliJ`, `Eclipse`, `VSCode`, ...).
+The rules described in the above text could be downloaded [in this XML file](https://github.com/sarvika/sarvika.github.io/blob/master/files/TheSarvikaWay.xml) that can be imported in all mainstream IDEs (`IntelliJ`, `Eclipse`, `VSCode`, ...).
 
 ---
 
